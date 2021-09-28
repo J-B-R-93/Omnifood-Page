@@ -6,7 +6,7 @@ Practice on a real looking website, from Udemy courses.
 It is a one page marketing website (landing page).All the content is provided from the course resources (Course: Build Responsive Real-World Websites with HTML and CSS).
 Course Link:https://www.udemy.com/share/101Wqo3@SsGklyNelU1LP6lpk_pWuwecLRhgWlTkAw5V9SeelRsDOJI0vsrGwTZaFO9LElatAw==/
 
-Live Site URL:
+    Live Site URL:
 
 ## Planning of the project
 
@@ -29,25 +29,26 @@ A startup/upbeat personality with some elements from the calm/peaceful personali
 
 ### Sections:
 
--Logo + Navigation
--Hero
--Featured in
--How it works (Z Pattern)
--Meals + Diets
--Testimonials + Gallery
--Pricing + Features
--Call to Action
--Footer
+- Logo + Navigation
+- Hero
+- Featured in
+- How it works (Z Pattern)
+- Meals + Diets
+- Testimonials + Gallery
+- Pricing + Features
+- Call to Action
+- Footer
 
 ## Built with:
 
--Flexbox Layout
--Grid Layout
--Reusable Code:
+- Flexbox Layout
+- Grid Layout
+- Reusable Code:
 
 <!-- To center the continaer with a max width and padding on sides  -->
 
-.cent-cont {
+    - .cent-cont {
+
 max-width: 130rem;
 margin: 0 auto;
 padding: 0 3rem;
@@ -55,29 +56,35 @@ padding: 0 3rem;
 
 <!-- Apply the grid layout -->
 
-.grid {
+    - .grid {
+
 display: grid;
 }
 
 <!-- Grid layout with 2 columns -->
 
-.grid--2col {
+    - .grid--2col {
+
 grid-template-columns: repeat(2, 1fr);
 }
 
 <!-- Grid layout with 3 columns -->
 
-.grid--3col {
+    - .grid--3col {
+
 grid-template-columns: repeat(3, 3fr);
 }
 
 <!-- Grid layout with 4 columns -->
 
-.grid--4col {
+    - .grid--4col {
+
 grid-template-columns: repeat(4, 1fr);
 }
 
--
+- z-index
+
+- After and before pseudo elements
 
 Omnifood project is a website created while taking a course on Udemy.
 

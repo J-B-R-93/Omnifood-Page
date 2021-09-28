@@ -19,7 +19,8 @@ body {
 /* Reusable Code */
 /* ******************************************************/
 .primary-heading,
-.secondary-heading {
+.secondary-heading,
+.tertiary-heading {
   color: #333;
   font-weight: 700;
   line-height: 1.05;
@@ -27,16 +28,32 @@ body {
 }
 .secondary-heading {
   font-size: 4.4rem;
+  margin-bottom: 9.6rem;
+}
+.tertiary-heading {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
 }
 /* Centering container */
 .cent-cont {
-  max-width: 130rem;
+  /* max-width: 130rem; */
   margin: 0 auto;
   padding: 0 3rem;
+}
+.step-image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* Apply grid layout */
 .grid {
   display: grid;
+  column-gap: 3.2rem;
+  row-gap: 9.6rem;
+}
+.grid--center-v {
+  align-items: center;
 }
 /* Grid with 2 columns */
 .grid--2col {
@@ -197,6 +214,32 @@ body {
   color: #cf711f;
   font-size: 2.1rem;
 }
+
+/* ******************************************************/
+/* Featured in SECTION */
+/* ******************************************************/
+.featured-section {
+  padding: 4.8rem 0;
+}
+.featured-in-heading {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
 /* ******************************************************/
 /* How it works SECTION */
 /* ******************************************************/
@@ -204,5 +247,56 @@ body {
   padding: 4.8rem 3rem;
 }
 .step-image {
-  width: 50%;
+  width: 35%;
+}
+.step-image-box {
+  position: relative;
+}
+
+.step-image-box::before,
+.step-image-box::after {
+  content: "";
+  display: block;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.step-image-box::before {
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+
+  z-index: -2;
+}
+.step-image-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+
+  z-index: -1;
+}
+.step-textbox {
+  padding: 0 6rem;
+}
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+.sub-heading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 1px;
+}
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }

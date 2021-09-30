@@ -4,9 +4,10 @@
 
 Practice on a real looking website, from Udemy courses.
 It is a one page marketing website (landing page).All the content is provided from the course resources (Course: Build Responsive Real-World Websites with HTML and CSS).
-Course Link:https://www.udemy.com/share/101Wqo3@SsGklyNelU1LP6lpk_pWuwecLRhgWlTkAw5V9SeelRsDOJI0vsrGwTZaFO9LElatAw==/
 
-    Live Site URL:
+Course Link: https://www.udemy.com/share/101Wqo3@SsGklyNelU1LP6lpk_pWuwecLRhgWlTkAw5V9SeelRsDOJI0vsrGwTZaFO9LElatAw==/
+
+    Product live site URL: https://j-b-r-93.github.io/Omnifood-Page/
 
 ## Planning of the project
 
@@ -85,6 +86,10 @@ grid-template-columns: repeat(4, 1fr);
 - z-index
 
 - After and before pseudo elements
+
+- transitions
+
+- translate
 
 Omnifood project is a website created while taking a course on Udemy.
 

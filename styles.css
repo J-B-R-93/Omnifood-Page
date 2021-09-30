@@ -3,6 +3,10 @@
   padding: 0;
   margin: 0;
 }
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgb(230, 126, 34, 0.5);
+}
 html {
   /* (10/16)*100 */
   /* Percentage of user's font-size setting, adjustable */
@@ -69,7 +73,9 @@ strong {
 .grid--4col {
   grid-template-columns: repeat(4, 1fr);
 }
-
+.grid--5col {
+  grid-template-columns: repeat(5, 1fr);
+}
 /* ******************************************************/
 /* HEADER */
 /* ******************************************************/
@@ -153,6 +159,7 @@ strong {
 .hero-image {
   width: 100%;
 }
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -535,7 +542,10 @@ strong {
   text-align: center;
   margin-top: 3.2rem;
 }
-/* Feature section */
+/*************************************************/
+/* Feature Section */
+/*****************************************************/
+
 .features {
   margin-top: 5rem;
   padding: 0 8rem 9.6rem 8rem;
@@ -558,5 +568,154 @@ strong {
 .feature-text {
   font-size: 1.8rem;
   line-height: 1.8;
+  color: #555;
+}
+/*************************************************/
+/* Call to action Section */
+/*****************************************************/
+.call-to-action {
+  padding: 9.6rem 9.6rem;
+}
+.cta {
+  background-color: #381d06;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.cta-textbox {
+  color: #45260a;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+.cta-textbox .secondary-heading {
+  color: #45260a;
+  margin-bottom: 3.2rem;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.cta-imagebox {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("images/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+/* Form design */
+.cta-form label {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  border: none;
+  box-shadow: 0 1px 2px rbga(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #bbb;
+}
+.cta-form select {
+}
+.cta-form button {
+  background-color: #45260a;
+  padding: 1.2rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+  align-self: end;
+}
+.cta-form button:hover {
+  background-color: #fff;
+  color: #333;
+}
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgb(253, 242, 233, 0.5);
+}
+/*************************************************/
+/* Footer Section */
+/*****************************************************/
+.footer {
+  border-top: 1px solid #eee;
+  padding-top: 10rem;
+  padding-bottom: 9.6rem;
+}
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.copyright {
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.6;
+  margin-top: auto;
+}
+.social-links {
+  list-style: none;
+
+  display: flex;
+  gap: 2.4rem;
+}
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.address {
+  margin-bottom: 2.4rem;
+}
+.footer-navigation {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+
+  transition: all 0.3s;
+}
+.footer-link:hover,
+.footer-link:active {
   color: #555;
 }

@@ -1,0 +1,244 @@
+/* Breakpoint at 1300px width */
+/* 1300px/16px = 82em  */
+@media (max-width: 82em) {
+  .primary-heading {
+    font-size: 4.2rem;
+  }
+}
+
+/* Breakpoint at 1200px */
+@media (max-width: 75em) {
+  html {
+    /* 9px (desired)/16px (default) x100*/
+    font-size: 56.25%;
+  }
+  .secondary-heading {
+    font-size: 3.6rem;
+  }
+  .tertiary-heading {
+    font-size: 2.8rem;
+    margin-bottom: 2.8rem;
+  }
+  .grid {
+    row-gap: 6.4rem;
+  }
+  .testimonial .secondary-heading {
+    margin-bottom: 3.2rem;
+  }
+}
+/* Breakpoint at 950px */
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px * 100 */
+    font-size: 50%;
+  }
+  .secondary-heading {
+    font-size: 2.8rem;
+  }
+  .tertiary-heading {
+    font-size: 2.4rem;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+  .hero-image {
+    display: inline-block;
+    width: 60%;
+  }
+  .hero-text-box,
+  .hero-image-box {
+    text-align: center;
+  }
+  .delivered-meals {
+    margin-top: 3.2rem;
+    justify-content: center;
+  }
+  .logos img {
+    height: 2.4rem;
+  }
+  .step-number {
+    font-size: 6.8rem;
+  }
+  .step-description {
+    line-height: 1.5;
+  }
+  .meal-name {
+    font-size: 2rem;
+  }
+  .testimonial {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .testimonial-left-section {
+    padding: 3.6rem 3rem 3.6rem 3rem;
+  }
+  .features {
+    padding: 0 3.2rem 3.2rem 3.2rem;
+  }
+  .call-to-action {
+    padding: 4.8rem 3.2rem;
+  }
+  .cta {
+    grid-template-columns: 60fr 40fr;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .cta-form .btn {
+    margin-top: 1.2rem;
+  }
+  /* Mobile Nav */
+  .btn--mobile-nav {
+    display: block;
+  }
+  .main-nav {
+    background-color: rgb(255, 255, 255, 0.9);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5sec ease-in;
+
+    /* To hide an elelemt */
+    /* 1) opacity: 0  */
+    opacity: 0;
+    /* 2) unaccessible to mouse and keyboard*/
+    pointer-events: none;
+    /*3) Hide it from screen readers  */
+    visibility: hidden;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+/* breakpoint at 700px */
+@media (max-width: 44em) {
+  .grid--3col,
+  .grid--4col {
+    grid-template-columns: 1fr 1fr;
+  }
+  .diet {
+    grid-column: 1 / -1;
+  }
+  .list-checks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+  .pricing-plan {
+    width: 100%;
+    padding: 3.2rem;
+  }
+  .complete-plan::after {
+    top: 5.5%;
+    right: -23%;
+  }
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 34em) {
+  .secondary-heading {
+    margin-bottom: 3rem;
+  }
+  .grid {
+    row-gap: 4.8rem;
+  }
+  .cent-cont {
+    padding: 0 1rem;
+  }
+  .grid--2col,
+  .grid--3col,
+  .grid--4col {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding: 3rem;
+  }
+  .hero-description {
+    margin-bottom: 2.4rem;
+  }
+  .btn,
+  .btn:visited,
+  .btn:link {
+    padding: 1rem 1rem;
+  }
+  .hero-image {
+    width: 80%;
+  }
+  .logos img {
+    height: 1.2rem;
+  }
+  .step-image-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-image-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 2rem;
+  }
+  .pricing-section {
+    margin-top: 3rem;
+  }
+  .pricing-plan {
+    width: 80%;
+    justify-self: center;
+  }
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-imagebox {
+    height: 24rem;
+    grid-row: 1;
+  }
+  .cta-textbox {
+    padding: 3rem;
+  }
+  .footer {
+    padding: 3.6rem 3rem 3rem 3rem;
+    margin-bottom: 3.2rem;
+  }
+}

@@ -42,6 +42,7 @@ A startup/upbeat personality with some elements from the calm/peaceful personali
 
 ## Built with:
 
+- Media queries responsive to all screens
 - Flexbox Layout
 - Grid Layout
 - Reusable Code:
@@ -90,20 +91,3 @@ grid-template-columns: repeat(4, 1fr);
 - transitions
 
 - translate
-
-Omnifood project is a website created while taking a course on Udemy.
-
-What should include:
-Titles and internal titles (# for h1, ## for h2, ### for h3, ... )
-Introduction - the project's aim (summary for the priject, not long, describing why the project is for and why it is created)
-Technologies (technologies used to create the file for recruiters to know what are the skills used by the developer)
-Illustrations
-Process followed
-Project status (completion state, what is missing)
-Sourses (Udemy source. based on a tutorial)
-Example of use (standrad code that can be used elsewhere)
-
-Example README
-https://github.com/iharsh234/WebApp/blob/master/README.md
-
-https://github.com/gitpoint/git-point/blob/master/README.md

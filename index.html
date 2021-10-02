@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="description" content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It is tailored per your personal taste and nutritional needs." />
+    <!-- Browser fav icon -->
+    <link rel="icon" href="images/favicon-64px.png" />
+    <!-- Ios home screen fav icon -->
+    <link rel="apple-touch-icon" href="images/favicon-apple-180px.png" />
+    <!-- Android fav icon -->
+    <link rel="manifest" href="manifest.webmanifest">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,13 +31,17 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <!-- Safari script for scrolling -->
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <!-- JavaScript  -->
+    <script defer src="script.js"></script>
 
-    <title>Omnifood Project</title>
+    <title>Omnifood &dash; Never cook again</title>
   </head>
 
   <body>
     <!-- Header/Navbar Section  -->
-    <header class="header">
+    <header class="header sticky">
       <a href="#">
         <img src="images/omnifood-logo.png" alt="Omnifood Logo" class="logo" />
       </a>
@@ -63,8 +73,8 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn margin-right-sm">Start Eating Well</a>
-            <a href="#" class="btn btn-modified">Learn More &darr;</a>
+            <a href="#cta" class="btn margin-right-sm">Start Eating Well</a>
+            <a href="#how-it-works" class="btn btn-modified">Learn More &darr;</a>
             <div class="delivered-meals">
               <div class="customers-photos">
                 <img
@@ -99,11 +109,17 @@
             </div>
           </div>
           <div class="hero-image-box">
-            <img
+            <!-- Option for the browser to choose best between 2 types -->
+            <picture>
+              <source srcset="images/hero-min.webp" type="image/webp" />
+              <source srcset="images/hero-min.png" type="image/png" />
+              <img
               src="images/hero-min.png"
               alt="Meals and a woman enjoying food"
               class="hero-image"
             />
+            </picture>
+           
           </div>
         </div>
       </section>
@@ -656,7 +672,7 @@
               </li>
             </ul>
             <p class="copyright">
-              Copyright &copy; 2027 by Omnifood, Inc. All rights reserved
+              Copyright &copy; <span class="year">2027</span> by Omnifood, Inc. All rights reserved
             </p>
           </a>
         </div>
@@ -698,5 +714,6 @@
         </nav>
       </div>
     </footer>
+    
   </body>
 </html>
